@@ -4,27 +4,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>고객의 소리</title>
-  <meta name="description" content="코스닥 사이트 클론코딩">
-  <meta name="keywords" content="코스닥글로벌, 코스닥글로벌 소개, 코스닥사이트, 코스닥글로벌 편입종목, 코스닥글로벌 통계, 코스닥글로벌 연계상품, 코스닥글로벌 사이트, 코스닥웹사이트 ">
-  <meta name="author" content="김성희">
-  <script src="https://kit.fontawesome.com/292e88d0f3.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/import.css" />
-  <link rel="stylesheet" href="css/sub2.css"/>
+  <title>코스닥 ㅣ 참여마당</title>
+  <meta name="description" content="global kosdaq sub page">
+  <meta name="keywords" content="Participation yard page">
+  <meta name="author" content="global kosdaq_sh">
+  <link rel="stylesheet" type="text/css" href="css/import.css">
+  <link rel="stylesheet" type="text/css" href="css/sub2.css">
   <script defer src="js/sub2.js"></script>
+  <script src="https://kit.fontawesome.com/292e88d0f3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
 <!-- 본문 바로가기 -->
 <div id="skipNavi"><a href="#container">본문바로가기</a></div>
 <!-- //본문바로가기 -->
-
 <div id="wrap">
 <div id="header">
-
 </div>
 <!--// header -->
-
 <!-- btnMenu -->
 <div class="btnMenu">
 <div class="btnMenu_burger"></div>
@@ -46,7 +42,6 @@
     </ul>
   </div>
   </li>
-  
   <li><a href="#">편입종목<span></span></a>
   <div>
     <ul>
@@ -68,7 +63,6 @@
     </ul>
   </div>
   </li>
-  
   <li><a href="#">연계상품<span></span></a>
   <div>
     <ul>
@@ -77,7 +71,6 @@
     </ul>
   </div>
   </li>
-  
   <li><a href="#">통계<span></span></a>
   <div>
     <ul>
@@ -103,7 +96,6 @@
     </ul>
   </div>
   </li>
-  
   <li><a href="#">참여마당<span></span></a>
   <div>
     <ul>
@@ -171,7 +163,6 @@
   <p class="path"><i class="fa-solid fa-house"></i> &nbsp; &gt; &nbsp;참여마당&nbsp; &gt; &nbsp;고객의 소리</p>
 </div>
 <!-- //subBanner -->
-
 <!-- subBox -->
 <div class="subBox">
 <p>코스닥 글로벌 세그먼트 운영에 대한 정책 제언,본 홈페이지에 관한 건의 사항 등을 자유롭게 남겨주시기 바랍니다.</p>
@@ -179,7 +170,6 @@
 </div>
 <!-- //subBox -->
 <p class="essential"><span>*</span>는 필수 입력 값 입니다.</p>
- 
 <form action="/" method="post">
 <fieldset>
   <legend class="blind">고객의 소리</legend>
@@ -226,12 +216,10 @@
      const response = await fetch(url);
      return await response.text();
   }
-
   async function importPage(target) {
     document.querySelector('#' + target).innerHTML = await
     fetchHtmlAsText(target + '.html');
   }
-
   importPage('header');
   importPage('footer');
 </script>
